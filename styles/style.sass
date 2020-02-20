@@ -19,4 +19,115 @@ $very-dark-blue: hsl(209, 33%, 12%)
 $libre-franklyn: 'Libre Franklin', sans-serif
 
 .body
+    font-family: $libre-franklyn
     font-size: 20px
+
+.header
+    padding: 3rem
+    display: grid
+    grid-template-columns: 1fr
+    margin: auto
+
+.intro
+    text-align: center
+
+    strong
+        color: $very-dark-blue
+
+    h1
+        color: $gray
+
+.subscribe
+    display: grid
+    justify-items: center
+    padding: 1rem 0 4rem 1.5rem
+
+    .form-control
+        text-align: left
+        color: $pale-blue
+        border-radius: 40px
+        padding: 1.6rem 9rem 1.6rem 1.5rem
+        border-color: $pale-blue
+
+    .form-control::placeholder
+        color: $pale-blue
+
+    button
+        -webkit-box-shadow: 0 2px 8px 4px rgba(0,0,0,0.18)
+        -moz-box-shadow: 0 2px 8px 4px rgba(0,0,0,0.18)
+        box-shadow: 0 2px 8px 4px rgba(0,0,0,0.18)
+        color: white
+        background-color: $blue
+        font-size: 0.8rem
+        font-weight: 700
+        border-radius: 40px
+        margin: 0 .8rem
+        padding: .9rem 3.2rem
+
+
+.dashboard img
+    width: 50%
+
+.dashboard .col
+    display: grid
+    justify-items: center
+
+.icons-row
+    div
+        display: flex
+        justify-content: center
+        margin: 2rem .5rem .8rem .5rem
+
+    i
+        border: 0.08rem solid $pale-blue
+        padding: 0.4rem
+        border-radius: 50%
+        color: $blue
+
+    .fa-facebook-f
+        padding: 0.4rem 0.6rem
+
+.copyright
+    font-size: .75rem
+    text-align: center
+    color: $gray
+
+.attribution
+    display: grid
+    grid-template-columns: 1fr
+    margin-top: 1rem
+    text-align: center
+    font-size: 1rem
+
+    p
+        font-size: 1rem
+        color: $gray
+
+@media (max-width: 720px)
+    .intro
+        h1
+            font-size: 1.5rem
+            margin: auto auto 1rem auto
+
+        p
+            font-size: .85rem
+
+
+    .subscribe .form-inline
+        display: grid
+
+
+        .form-control
+            margin: 0
+            padding: 1.3rem 3.5rem
+
+        button
+            margin: 0
+            padding: 0.8rem 7.5rem
+
+    .dashboard img
+        width: 100%
+
+
+    .icons-row
+        margin-top: 2.5rem

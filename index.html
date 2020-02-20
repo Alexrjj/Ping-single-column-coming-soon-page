@@ -36,20 +36,20 @@
     </div>
     <div class="row intro">
       <div class="col">
-        <h1>We are launching soon!</h1>
+        <h1>We are launching <strong>soon!</strong></h1>
         <p>Subscribe and get notified</p>
       </div>
     </div>
-    <div class="row subscribe">
-      <div class="col">
+    <div class="row">
+      <div class="col subscribe">
         <form class="form-inline needs-validation" novalidate>
           <div class="form-group">
-            <input type="email" class="form-control email-adress" id="emailAdress" placeholder="Email Adress" required>
+            <input type="email" class="form-control" id="emailAdress" placeholder="Your email adress..." required>
             <div class="invalid-feedback">
               Please provide a valid email adress
             </div>
-            <button type="submit" class="btn btn-primary">Notify Me</button>
           </div>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
         </form>
       </div>
     </div>
@@ -60,9 +60,9 @@
     </div>
     <div class="row icons-row">
       <div class="col">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
+        <div><i class="fab fa-facebook-f"></i></div>
+        <div><i class="fab fa-twitter"></i></div>
+        <div><i class="fab fa-instagram"></i></div>
       </div>
     </div>
     <div class="row copyright">
@@ -72,14 +72,36 @@
     </div>
   </div>
   <footer>
-    <div class="row">
-      <div class="col">
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/Alexrjj">Alexrj</a>.
-        </p>
+    <div class="container">
+      <div class="row attribution">
+        <div class="col">
+          <p>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/Alexrjj">Alexrj</a>.
+          </p>
+        </div>
       </div>
     </div>
   </footer>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                  }, false);
+              });
+          }, false);
+      })();
+  </script>
 </body>
 </html>
