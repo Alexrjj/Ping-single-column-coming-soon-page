@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AACA,OAAO,CAAC,sFAAI",
-    "sources": [
-        "style.sass"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sourceRoot":"","sources":["style.sass"],"names":[],"mappings":"AACQ;AAmBR;EACI","file":"style.css"}
