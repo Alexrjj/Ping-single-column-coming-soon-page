@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Ping coming soon page</title>
   <!-- Bootstrap 4.4.1 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/9b1e3e940f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+  <div class="container">
+    <div class="row">
+      <div class="header">
+        <div class="col">
+          <img src="/images/logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row intro">
+      <div class="col">
+        <h1>We are launching soon!</h1>
+        <p>Subscribe and get notified</p>
+      </div>
+    </div>
+    <div class="row subscribe">
+      <div class="col">
+        <form class="form needs-validation" novalidate>
+          <div class="form-group">
+            <input type="email" class="form-control email-adress" id="emailAdress" placeholder="Email Adress" required>
+            <div class="invalid-feedback">
+              Please provide a valid email adress
+            </div>
+            <button type="submit" class="btn btn-primary">Notify Me</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row dashboard">
+      <div class="col">
+        <img src="/images/illustration-dashboard.png" alt="">
+      </div>
+    </div>
+    <div class="row icons-row">
+      <div class="col">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <div class="row copyright">
+      <div class="col">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
+    </div>
+  </div>
+  </div>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/Alexrjj">Alexrj</a>.
-    </p>
+    <div class="row">
+      <div class="col">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/Alexrjj">Alexrj</a>.
+        </p>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
